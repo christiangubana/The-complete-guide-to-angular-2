@@ -19,7 +19,6 @@ export class AppComponent {
   }
 
   onClickedUser(id: string) {
-    // console.log(`You select user ID ${id}`);
     this.selectedUserId = id;
   }
 }
