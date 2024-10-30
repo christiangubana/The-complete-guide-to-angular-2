@@ -7,7 +7,7 @@
         [id]="users[0].id"
         [avatar]="users[0].avatar"
         [name]="users[0].name"
-        (select)="onSelectUser($event)"
+        (select)="onClickedUser($event)"
       />
     </li>
     <li>
@@ -15,7 +15,7 @@
         [id]="users[1].id"
         [avatar]="users[1].avatar"
         [name]="users[1].name"
-        (select)="onSelectUser($event)"
+        (select)="onClickedUser($event)"
       />
     </li>
     <li>
@@ -23,7 +23,7 @@
         [id]="users[2].id"
         [avatar]="users[2].avatar"
         [name]="users[2].name"
-        (select)="onSelectUser($event)"
+        (select)="onClickedUser($event)"
       />
     </li>
     <li>
@@ -31,7 +31,7 @@
         [id]="users[3].id"
         [avatar]="users[3].avatar"
         [name]="users[3].name"
-        (select)="onSelectUser($event)"
+        (select)="onClickedUser($event)"
       />
     </li>
     <li>
@@ -39,7 +39,7 @@
         [id]="users[4].id"
         [avatar]="users[4].avatar"
         [name]="users[4].name"
-        (select)="onSelectUser($event)"
+        (select)="onClickedUser($event)"
       />
     </li>
     <li>
@@ -47,8 +47,10 @@
         [id]="users[5].id"
         [avatar]="users[5].avatar"
         [name]="users[5].name"
-        (select)="onSelectUser($event)"
+        (select)="onClickedUser($event)"
       />
     </li>
   </ul>
+  
+  <app-tasks [name]="clickedUser.name"/>
 </main>
