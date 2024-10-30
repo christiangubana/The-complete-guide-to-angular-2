@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-uses';
 
 const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
-
 @Component({
   selector: 'app-user',
   standalone: true,
@@ -17,6 +16,7 @@ export class UserComponent {
   };
 
   onUserSelect() {
-    console.log('Clicked!!!')
+   const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+   this.selectedUser = DUMMY_USERS[randomIndex]
   }
 }
