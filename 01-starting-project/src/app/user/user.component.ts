@@ -7,17 +7,8 @@ import {
   Output,
 } from '@angular/core';
 
-// type UserTypes = {
-//   id: string;
-//   name: string;
-//   avatar: string;
-// };
+import { type UserTypes } from './user.model';
 
-interface UserTypes {
-  id: string;
-  name: string;
-  avatar: string;
-}
 @Component({
   selector: 'app-user',
   standalone: true,
