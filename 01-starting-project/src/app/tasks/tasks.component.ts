@@ -16,13 +16,13 @@ export class TasksComponent {
   @Input({ required: true }) name!: string;
 
   constructor(private tasksService: TasksServices){
-
+    
   }
 
   isAddingNewTask = false;
 
   get selectedUserTask() {
-    return 
+    return this.tasksService.getUserTasks(this.userId)
   }
 
   onCompleteTask(id: string) {
