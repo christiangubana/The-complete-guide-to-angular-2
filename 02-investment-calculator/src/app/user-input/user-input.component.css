@@ -30,6 +30,7 @@ form {
     background-color: transparent;
     color: #c2e9e0;
     font-size: 1rem;
+    outline: none;
   }
   
   button {
@@ -47,4 +48,12 @@ form {
   
   button:hover {
     background-color: #aaf1d6;
+  }
+
+  input::placeholder {
+    color: white;
+    font-weight: 300;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+    font-size: smaller;
   }
